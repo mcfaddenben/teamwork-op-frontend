@@ -8,8 +8,12 @@
         </li>
       </ul>
       <div class="form-group">
-        <label>Name:</label>
-        <input type="text" class="form-control" v-model="newUserParams.name" />
+        <label>Summoner Name:</label>
+        <input type="text" class="form-control" v-model="newUserParams.summoner_name" />
+      </div>
+      <div class="form-group">
+        <label>region:</label>
+        <input type="text" class="form-control" v-model="newUserParams.region" />
       </div>
       <div class="form-group">
         <label>Email:</label>

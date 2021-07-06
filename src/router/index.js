@@ -1,8 +1,13 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
-import Signup from "../views/Signup.vue";
+import Signup from "../views/users/Signup.vue";
 import Login from "../views/Login.vue";
+import Logout from "../views/Logout.vue";
+import Index from "../views/teams/Index.vue";
+import UserShow from "../views/users/UserShow.vue";
+import UserEdit from "../views/users/UserEdit.vue";
+import TeamShow from "../views/teams/TeamShow.vue"
 
 Vue.use(VueRouter);
 
@@ -13,14 +18,39 @@ const routes = [
     component: Home,
   },
   {
-    path: "/Login",
+    path: "/login",
     name: "login",
     component: Login,
   },
   {
-    path: "/Signup",
+    path: "/users/:id/edit",
+    name: "user-edit",
+    component: UserEdit,
+  },
+  {
+    path: "/signup",
     name: "signup",
     component: Signup,
+  },
+  {
+    path: "/logout",
+    name: "logout",
+    component: Logout,
+  },
+  {
+    path: "/index",
+    name: "Index",
+    component: Index,
+  },
+  {
+    path: "/users/:id",
+    name: "user-show",
+    component: UserShow,
+  },
+  {
+    path: "/teams/:id",
+    name: "team-show",
+    component: TeamShow,
   },
   {
     path: "/about",
