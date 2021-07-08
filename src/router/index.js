@@ -7,7 +7,9 @@ import Logout from "../views/Logout.vue";
 import Index from "../views/teams/Index.vue";
 import UserShow from "../views/users/UserShow.vue";
 import UserEdit from "../views/users/UserEdit.vue";
-import TeamShow from "../views/teams/TeamShow.vue"
+import TeamShow from "../views/teams/TeamShow.vue";
+import NewTeam from "../views/teams/New.vue";
+
 
 Vue.use(VueRouter);
 
@@ -21,6 +23,11 @@ const routes = [
     path: "/login",
     name: "login",
     component: Login,
+  },
+  {
+    path: "/teams/new",
+    name: "team-new",
+    component: NewTeam,
   },
   {
     path: "/users/:id/edit",
