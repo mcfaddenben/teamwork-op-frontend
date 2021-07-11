@@ -5,7 +5,7 @@
       |
       <router-link to="/about">About</router-link>
       |
-      <router-link to="/index">Index</router-link>
+      <router-link to="/teams">Index</router-link>
       |
       <span v-if="isLoggedIn()">
         <router-link to="/logout">logout</router-link>

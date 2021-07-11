@@ -40,7 +40,7 @@ export default {
         .post("/teams", this.newTeamParams)
         .then((response) => {
           console.log(response.data);
-          this.$router.push("/login");
+          this.$router.push("/teams");
         })
         .catch((error) => {
           this.errors = error.response.data.errors;
