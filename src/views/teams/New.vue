@@ -12,12 +12,19 @@
         <input type="text" class="form-control" v-model="newTeamParams.name" />
       </div>
       <div class="form-group">
-        <label>Private?:</label>
-        <input type="boolean" class="form-control" v-model="newTeamParams.private" />
-      </div>
-      <div class="form-group">
         <label>About:</label>
         <input type="text" class="form-control" v-model="newTeamParams.about" />
+      </div>
+      <div class="custom-control custom-checkbox mb-3">
+        <input
+          type="checkbox"
+          v-model="newTeamParams.private"
+          true-value="true"
+          false-value="false"
+          class="custom-control-input"
+          id="customCheck1"
+        />
+        <label class="custom-control-label" for="customCheck1">Private?</label>
       </div>
       <input type="submit" class="btn btn-primary" value="Submit" />
     </form>
