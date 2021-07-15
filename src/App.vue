@@ -89,7 +89,10 @@
                 <i class="feather-edit mr-1"></i>
                 My Profile
               </router-link>
-
+              <router-link class="dropdown-item" :to="`/users/${getUserId()}/edit`">
+                <i class="feather-edit mr-1"></i>
+                Edit Profile
+              </router-link>
               <div class="dropdown-divider"></div>
               <router-link class="dropdown-item" to="/logout">
                 <i class="feather-log-out mr-1"></i>
